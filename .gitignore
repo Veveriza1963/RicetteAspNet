@@ -1,0 +1,4 @@
+#Rider configuration
+.idea/
+#Directory compiled
+bin/
