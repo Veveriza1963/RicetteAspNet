@@ -1,10 +1,30 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Welcome To Recipe</h1>
+    <p>Tabella Riepilogativa Articoli</p>
+    <table class="table table-bordered mt-3">
+        <thead class="bg-light">
+        <tr>
+            <th>Indice</th>
+            <th>Articolo</th>
+            <th>Note</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var Item in Model.ListaArticoli)
+        {
+            <tr>
+                <td>@Item.Id</td>
+                <td>@Item.Articolo</td>
+                <td>@Item.Note</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    <a class="btn btn-primary mt-3" asp-page="/Articoli/Create">Pagina Creare Articolo</a>
 </div>

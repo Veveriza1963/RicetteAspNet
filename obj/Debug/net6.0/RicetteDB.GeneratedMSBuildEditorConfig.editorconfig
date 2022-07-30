@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/veveriza/RiderProjects/RicetteDB
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/veveriza/RiderProjects/RicetteDB/Pages/Articoli/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXJ0aWNvbGkvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/veveriza/RiderProjects/RicetteDB/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
