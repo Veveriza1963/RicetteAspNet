@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XjM/6TAsfdPW6l+FWzOmWFK/VjWClYLRmsrlvIHYxfM=",
+  "Hash": "6NOpdlYVUi578w9nodcu9dN4D+mLF2RYQN0JFYPFPmg=",
   "Source": "RicetteDB",
   "BasePath": "_content/RicetteDB",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/home/veveriza/RiderProjects/RicetteDB/wwwroot/images/Actions-edit-delete-icon.png",
+      "SourceId": "RicetteDB",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/veveriza/RiderProjects/RicetteDB/wwwroot/",
+      "BasePath": "_content/RicetteDB",
+      "RelativePath": "images/Actions-edit-delete-icon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/Actions-edit-delete-icon.png"
     },
     {
       "Identity": "/home/veveriza/RiderProjects/RicetteDB/wwwroot/js/site.js",

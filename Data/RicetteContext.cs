@@ -7,6 +7,7 @@ public class RicetteContext : DbContext
 {
     //Tabelle
     public DbSet<Articoli> Articoli { get; set; } = null!;
+    public DbSet<RicAzoto> RicAzoto { get; set; } = null!;
 
     protected override void OnModelCreating(ModelBuilder ModelBuilder)
     {
@@ -16,7 +17,7 @@ public class RicetteContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder OptionsBuilder)
     {
         if (OptionsBuilder.IsConfigured) return;
-        var ConnectionString = "server=192.168.0.31;user=Gomsil;password=Gomsil123;database=RicetteDB";
+        const string ConnectionString = "server=192.168.0.31;user=Gomsil;password=Gomsil123;database=RicetteDB";
         var ServerVersion = new MariaDbServerVersion(new Version(10, 3, 28));
         OptionsBuilder.UseMySql(ConnectionString, ServerVersion);
     }

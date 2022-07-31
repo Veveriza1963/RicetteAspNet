@@ -13,6 +13,7 @@
             <th>Indice</th>
             <th>Articolo</th>
             <th>Note</th>
+            <th>Azioni</th>
         </tr>
         </thead>
         <tbody>
@@ -22,6 +23,13 @@
                 <td>@Item.Id</td>
                 <td>@Item.Articolo</td>
                 <td>@Item.Note</td>
+                <td>
+                    <form method="post" asp-page-handler="Delete" asp-route-Id="@Item.Id">
+                        <button>
+                            <img src="images/Actions-edit-delete-icon.png" alt="Delete" width="24" height="24"/>
+                        </button>
+                    </form>
+                </td>
             </tr>
         }
         </tbody>
