@@ -1,25 +1,28 @@
-var builder = WebApplication.CreateBuilder(args);
+using Microsoft.EntityFrameworkCore;
+using RicetteDB.Data;
+
+var Builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorPages();
+Builder.Services.AddRazorPages();
 
-var app = builder.Build();
+var App = Builder.Build();
 
 // Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+if (!App.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Error");
+    App.UseExceptionHandler("/Error");
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    App.UseHsts();
 }
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
+App.UseHttpsRedirection();
+App.UseStaticFiles();
 
-app.UseRouting();
+App.UseRouting();
 
-app.UseAuthorization();
+App.UseAuthorization();
 
-app.MapRazorPages();
+App.MapRazorPages();
 
-app.Run();
+App.Run();

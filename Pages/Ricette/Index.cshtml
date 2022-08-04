@@ -1,0 +1,55 @@
+﻿@page
+@namespace RicetteDB.Pages.Ricette
+@model IndexModel
+@{
+    ViewData["Title"] = "Ricette";
+}
+<div class="container">
+    <h3>Elenco Ricette Articolo @ViewData["Id"]: @ViewData["Articolo"]</h3>
+    <form method="post" asp-page-handler="ModifyRicAzoto">
+        <div asp-validation-summary="All"></div>
+        <input type="text" asp-for="NewRicAzoto.ArticoloId" value="@ViewData["Id"]" hidden/>
+        <div class="row">
+            <label class="col-form-label" asp-for="NewRicAzoto.Temperatura"></label>
+            <input type="number" asp-for="NewRicAzoto.Temperatura"/>
+        </div>
+        <div class="row my-3">
+            <label class="col-form-label" asp-for="NewRicAzoto.Tempo"></label>
+            <input asp-for="NewRicAzoto.Tempo" placeholder="mm:ss"/>
+        </div>
+        <div class="row my-3">
+            <label class="col-form-label" asp-for="NewRicAzoto.Velocita"></label>
+            <input asp-for="NewRicAzoto.Velocita" placeholder="nn.nn"/>
+        </div>
+        <div class="row my-3">
+            <label class="col-form-label" asp-for="NewRicAzoto.Note"></label>
+            <textarea asp-for="NewRicAzoto.Note"></textarea>
+        </div>
+        <div class="row my-3">
+            <button class="btn btn-success" type="submit">Salva Ricetta Azoto</button>
+        </div>
+    </form>
+    <form class="my-3" method="post" asp-page-handler="ModifyRicForno">
+        <div asp-validation-summary="All"></div>
+        <input type="number" asp-for="NewRicForno.ArticoloId" value="@ViewData["Id"]" hidden/>
+        <div class="row">
+            <label class="col-form-label" asp-for="NewRicForno.Temperatura"></label>
+            <input type="number" asp-for="NewRicForno.Temperatura"/>
+        </div>
+        <div class="row my-3">
+            <label class="col-form-label" asp-for="NewRicForno.TempRiscaldo"></label>
+            <input asp-for="NewRicForno.TempRiscaldo" placeholder="hh:mm"/>
+        </div>
+        <div class="row my-3">
+            <label class="col-form-label" asp-for="NewRicForno.TempRaffreddo"></label>
+            <input asp-for="NewRicForno.TempRaffreddo" placeholder="hh:mm"/>
+        </div>
+        <div class="row my-3">
+            <label class="col-form-label" asp-for="NewRicForno.Note"></label>
+            <textarea asp-for="NewRicForno.Note"></textarea>
+        </div>
+        <div class="row my-3">
+            <button class="btn btn-success" type="submit">Salva Ricetta Forno</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,17 @@
+﻿@page
+@model RicetteDB.Pages.Articoli.ModifyModel
+@{
+    ViewData["Title"] = "Modify";
+}
+<div class="container">
+    <h3>Modifica Articolo:</h3>
+    <form method="post">
+        <label class="col-form-label mx-1" asp-for="ModifyArticolo.Id">Articolo ID:</label>
+        <input class="mx-1" type="text" size="5" asp-for="ModifyArticolo.Id" disabled/>
+        <label class="col-form-label mx1" asp-for="ModifyArticolo.Articolo">Articolo:</label>
+        <input class="mx-1" type="text" asp-for="ModifyArticolo.Articolo"/>
+        <label class="col-form-label mx-1" asp-for="ModifyArticolo.Note">Note:</label>
+        <textarea class="mx-1" asp-for="ModifyArticolo.Note"></textarea>
+        <button class="btn btn-success mx-1" type="submit" asp-route-Id="@Model.ModifyArticolo.Id">Conferma Modifica</button>
+    </form>
+</div>

@@ -24,11 +24,17 @@
                 <td>@Item.Articolo</td>
                 <td>@Item.Note</td>
                 <td>
-                    <form method="post" asp-page-handler="Delete" asp-route-Id="@Item.Id">
-                        <button>
-                            <img src="images/Actions-edit-delete-icon.png" alt="Delete" width="24" height="24"/>
-                        </button>
-                    </form>
+                    <div class="d-inline-flex justify-content-center">
+                        <a class="btn btn-success mx-1" asp-page="/Articoli/Modify" asp-route-Id="@Item.Id">
+                            <img src="images/Edit-Validated-icon.png" alt="Modify"/>
+                        </a>
+                        <a class="btn btn-danger mx-1" asp-page="/Articoli/Delete" asp-route-Id="@Item.Id">
+                            <img src="images/Actions-edit-delete-icon.png" alt="Delete"/>
+                        </a>
+                        <a class="btn btn-success mx-1" asp-page="/Ricette/Index" asp-route-Id="@Item.Id">
+                            <img src="images/Things-Book-icon.png" alt="Open"/>
+                        </a>
+                    </div>
                 </td>
             </tr>
         }

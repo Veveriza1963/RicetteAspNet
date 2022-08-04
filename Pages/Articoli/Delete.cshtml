@@ -1,0 +1,17 @@
+﻿@page
+@model RicetteDB.Pages.Articoli.DeleteModel
+@{
+    ViewData["Title"] = "Delete";
+}
+<div class="container">
+    <h3>Conferma Eliminazione Articolo:</h3>
+    <form method="post">
+        <label class="col-form-label" asp-for="DeleteArticolo.Id">Articolo ID:</label>
+        <input type="text" asp-for="DeleteArticolo.Id" disabled/>
+        <label class="col-form-label" asp-for="DeleteArticolo.Articolo">Articolo:</label>
+        <input type="text" asp-for="DeleteArticolo.Articolo" disabled/>
+        <label class="col-form-label" asp-for="DeleteArticolo.Note">Note:</label>
+        <textarea asp-for="DeleteArticolo.Note" disabled></textarea>
+        <button class="btn btn-danger" type="submit">Conferma Cancellazione</button>
+    </form>
+</div>

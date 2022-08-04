@@ -17,18 +17,11 @@ public class IndexModel : PageModel
 
     public void OnGet()
     {
-        var Context = new RicetteContext();
-        var Query = from Var in Context.Articoli
-            select Var;
-        ListaArticoli = Query.ToList();
-    }
-
-    public IActionResult OnPostDelete(int Id)
-    {
-        var Context = new RicetteContext();
-        var Articolo = Context.Articoli.Find(Id);
-        Context.Remove<Models.Articoli>(Articolo!);
-        Context.SaveChanges();
-        return RedirectToAction("Get");
+        using (var Context = new RicetteContext())
+        {
+            var Query = from Var in Context.Articoli
+                select Var;
+            ListaArticoli = Query.ToList();
+        }
     }
 }

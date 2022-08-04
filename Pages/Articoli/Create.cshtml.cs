@@ -15,7 +15,7 @@ namespace RicetteDB.Pages.Articoli
         public IActionResult OnPost()
         {
             if (!ModelState.IsValid) return Page();
-            var Context = new RicetteContext();
+            using var Context = new RicetteContext();
             Context.Add(NewArticolo);
             Context.SaveChanges();
             return RedirectToPage("/Index");
