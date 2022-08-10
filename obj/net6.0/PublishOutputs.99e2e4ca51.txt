@@ -1,0 +1,13 @@
+/tmp/rider-publish3359382956800429411/RicetteDB
+/tmp/rider-publish3359382956800429411/appsettings.Development.json
+/tmp/rider-publish3359382956800429411/appsettings.json
+/tmp/rider-publish3359382956800429411/RicetteDB.dll
+/tmp/rider-publish3359382956800429411/RicetteDB.runtimeconfig.json
+/tmp/rider-publish3359382956800429411/RicetteDB.pdb
+/tmp/rider-publish3359382956800429411/Microsoft.EntityFrameworkCore.dll
+/tmp/rider-publish3359382956800429411/Microsoft.EntityFrameworkCore.Abstractions.dll
+/tmp/rider-publish3359382956800429411/Microsoft.EntityFrameworkCore.Relational.dll
+/tmp/rider-publish3359382956800429411/Microsoft.Extensions.Caching.Memory.dll
+/tmp/rider-publish3359382956800429411/MySqlConnector.dll
+/tmp/rider-publish3359382956800429411/Pomelo.EntityFrameworkCore.MySql.dll
+/tmp/rider-publish3359382956800429411/RicetteDB.deps.json

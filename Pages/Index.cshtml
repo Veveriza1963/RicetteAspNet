@@ -8,12 +8,12 @@
     <h1 class="display-4">Welcome To Recipe</h1>
     <p>Tabella Riepilogativa Articoli</p>
     <table class="table table-bordered mt-3">
-        <thead class="bg-light">
+        <thead class="table-light">
         <tr>
             <th>Indice</th>
             <th>Articolo</th>
             <th>Note</th>
-            <th>Azioni</th>
+            <th style="width: 30%">Comandi</th>
         </tr>
         </thead>
         <tbody>
@@ -25,14 +25,14 @@
                 <td>@Item.Note</td>
                 <td>
                     <div class="d-inline-flex justify-content-center">
-                        <a class="btn btn-success mx-1" asp-page="/Articoli/Modify" asp-route-Id="@Item.Id">
+                        <a class="btn btn-success" asp-page="/Articoli/Modify" asp-route-Id="@Item.Id">
                             <img src="~/images/Edit-Validated-icon.png" alt="Modify"/>
                         </a>
-                        <a class="btn btn-danger mx-1" asp-page="/Articoli/Delete" asp-route-Id="@Item.Id">
-                            <img src="~/images/Actions-edit-delete-icon.png" alt="Delete"/>
-                        </a>
-                        <a class="btn btn-success mx-1" asp-page="/Ricette/Index" asp-route-Id="@Item.Id">
+                        <a class="btn btn-success ms-3" asp-page="/Ricette/Index" asp-route-Id="@Item.Id">
                             <img src="~/images/Things-Book-icon.png" alt="Open"/>
+                        </a>
+                        <a class="btn btn-danger" style="margin-left: 100px" asp-page="/Articoli/Delete" asp-route-Id="@Item.Id">
+                            <img src="~/images/Actions-edit-delete-icon.png" alt="Delete"/>
                         </a>
                     </div>
                 </td>
