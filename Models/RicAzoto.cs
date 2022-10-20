@@ -17,8 +17,8 @@ public class RicAzoto
 
     [Display(Name = "Velocità:")]
     [RegularExpression("\\d?\\d/.\\d\\d")]
-    public string Velocita { get; set; } = null!;
+    public string Velocita { get; set; } = String.Empty;
 
     [Display(Name = "Note:")]
-    public string Note { get; set; } = null!;
+    public string? Note { get; set; } = String.Empty;
 }

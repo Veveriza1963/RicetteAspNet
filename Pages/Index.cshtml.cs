@@ -20,6 +20,7 @@ public class IndexModel : PageModel
         using (var Context = new RicetteContext())
         {
             var Query = from Var in Context.Articoli
+                orderby Var.Articolo
                 select Var;
             ListaArticoli = Query.ToList();
         }

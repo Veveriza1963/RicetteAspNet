@@ -12,12 +12,12 @@ public class RicForno
     
     [Display(Name = "Temperatura Riscaldamento:")]
     [MaxLength(length:4)]
-    public string TempRiscaldo { get; set; } = null!;
+    public string TempRiscaldo { get; set; } = String.Empty;
     
     [Display(Name = "Temperatura Raffreddamento:")]
     [MaxLength(length:4)]
-    public string TempRaffreddo { get; set; } = null!;
+    public string TempRaffreddo { get; set; } = String.Empty;
     
     [Display(Name = "Note:")]
-    public string Note { get; set; } = null!;
+    public string? Note { get; set; } = String.Empty;
 }

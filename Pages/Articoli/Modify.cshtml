@@ -8,10 +8,22 @@
     <form method="post">
         <label class="col-form-label mx-1" asp-for="ModifyArticolo.Id">Articolo ID:</label>
         <input class="mx-1" type="text" size="5" asp-for="ModifyArticolo.Id" disabled/>
-        <label class="col-form-label mx1" asp-for="ModifyArticolo.Articolo">Articolo:</label>
+        <label class="col-form-label mx1" asp-for="ModifyArticolo.Articolo"></label>
         <input class="mx-1" type="text" asp-for="ModifyArticolo.Articolo"/>
-        <label class="col-form-label mx-1" asp-for="ModifyArticolo.Note">Note:</label>
+        <label class="col-form-label mx-1" asp-for="ModifyArticolo.Note"></label>
         <textarea class="mx-1" asp-for="ModifyArticolo.Note"></textarea>
+        <div class="form-check form-switch mt-1">
+            <input class="form-check-input" type="checkbox" id="Switch1" asp-for="ModifyArticolo.Talco"/>
+            <label class="form-check-label" for="Switch1" asp-for="ModifyArticolo.Talco"></label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="Switch2" asp-for="ModifyArticolo.Silicone"/>
+            <label class="form-check-label" for="Switch2" asp-for="ModifyArticolo.Silicone"></label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="Switch3" asp-for="ModifyArticolo.Teflon"/>
+            <label class="form-check-label" for="Switch3" asp-for="ModifyArticolo.Teflon"></label>
+        </div>
         <button class="btn btn-success mx-1" type="submit" asp-route-Id="@Model.ModifyArticolo.Id">Conferma Modifica</button>
     </form>
 </div>

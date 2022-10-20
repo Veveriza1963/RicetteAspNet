@@ -8,10 +8,8 @@
     <form method="post">
         <label class="col-form-label" asp-for="DeleteArticolo.Id">Articolo ID:</label>
         <input type="text" asp-for="DeleteArticolo.Id" disabled/>
-        <label class="col-form-label" asp-for="DeleteArticolo.Articolo">Articolo:</label>
+        <label class="col-form-label ms-2" asp-for="DeleteArticolo.Articolo"></label>
         <input type="text" asp-for="DeleteArticolo.Articolo" disabled/>
-        <label class="col-form-label" asp-for="DeleteArticolo.Note">Note:</label>
-        <textarea asp-for="DeleteArticolo.Note" disabled></textarea>
-        <button class="btn btn-danger" type="submit">Conferma Cancellazione</button>
+        <button class="btn btn-danger ms-2" type="submit">Conferma Cancellazione</button>
     </form>
 </div>

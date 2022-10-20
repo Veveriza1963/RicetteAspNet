@@ -10,8 +10,8 @@ namespace RicetteDB.Pages.Articoli
         {
         }
         
-        [BindProperty]
-        public Models.Articoli NewArticolo { get; set; } = new();
+        [BindProperty] public Models.Articoli NewArticolo { get; set; } = new();
+        
         public IActionResult OnPost()
         {
             if (!ModelState.IsValid) return Page();

@@ -33,3 +33,4 @@
 /home/veveriza/RiderProjects/RicetteDB/obj/Debug/net6.0/RicetteDB.csproj.CopyComplete
 /home/veveriza/RiderProjects/RicetteDB/bin/Debug/net6.0/Humanizer.dll
 /home/veveriza/RiderProjects/RicetteDB/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+/home/veveriza/RiderProjects/RicetteDB/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
